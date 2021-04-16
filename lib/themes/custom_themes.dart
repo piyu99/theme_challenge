@@ -19,27 +19,27 @@ class CustomWidgetThemes {
     switch (themeType) {
       case ThemeType.Light:
         sceneryThemeData = SceneryThemeData(
-          skyFillColor: Colors.grey,
-          mountainFillColor: Colors.blueGrey,
-          waterFillColor: Colors.blueGrey[800]!,
+          skyFillColor: Colors.yellow.shade50,
+          mountainFillColor: Colors.brown.shade800,
+          waterFillColor: Colors.lightBlueAccent.shade100,
           drawMoon: false,
           drawSun: true,
         );
         break;
       case ThemeType.Dark:
         sceneryThemeData = SceneryThemeData(
-          skyFillColor: Colors.grey,
-          mountainFillColor: Colors.blueGrey,
-          waterFillColor: Colors.blueGrey[800]!,
+          skyFillColor: Colors.blueGrey.shade500,
+          mountainFillColor: Colors.white70,
+          waterFillColor: Colors.indigo.shade700,
           drawMoon: true,
           drawSun: false,
         );
         break;
       case ThemeType.Other:
         sceneryThemeData = SceneryThemeData(
-          skyFillColor: Colors.grey,
-          mountainFillColor: Colors.blueGrey,
-          waterFillColor: Colors.blueGrey[800]!,
+          skyFillColor: Colors.deepOrange,
+          mountainFillColor: Colors.green.shade600,
+          waterFillColor: Colors.orange,
           drawMoon: true,
           drawSun: true,
         );

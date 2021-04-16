@@ -101,7 +101,7 @@ class SceneryPainter extends CustomPainter {
     final sunCenter = _center - Offset(3 * _center.dx / 4, _center.dy / 2);
     final innerRadius = 40.0;
     final outerRadius = innerRadius + innerRadius / 3;
-    final sunColor = Colors.yellowAccent;
+    final sunColor = Colors.yellow.shade600;
     _paint.color = sunColor;
     _paint.style = PaintingStyle.fill;
     canvas.drawCircle(sunCenter, innerRadius, _paint);

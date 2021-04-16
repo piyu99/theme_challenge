@@ -29,11 +29,59 @@ class MyTheme with ChangeNotifier {
   ThemeData get currentThemeData {
     switch (themeType) {
       case ThemeType.Light:
-        return ThemeData();
+        return ThemeData(
+          scaffoldBackgroundColor: Colors.lightBlueAccent.shade100,
+          textTheme: TextTheme(
+            headline3: TextStyle(
+              color: Colors.brown.shade800
+            ),
+            subtitle1: TextStyle(
+              color: Colors.indigo.shade900
+            ),
+            bodyText1: TextStyle(
+              color: Colors.brown
+            )
+          ),
+            appBarTheme: AppBarTheme(
+              backgroundColor: Colors.lightBlueAccent.shade100,
+            )
+        );
       case ThemeType.Dark:
-        return ThemeData();
+        return ThemeData(
+          scaffoldBackgroundColor: Colors.indigo.shade700,
+            textTheme: TextTheme(
+                headline3: TextStyle(
+                    color: Colors.white
+                ),
+                subtitle1: TextStyle(
+                    color: Colors.yellowAccent
+                ),
+                bodyText1: TextStyle(
+                    color: Colors.greenAccent
+                )
+            ),
+          appBarTheme: AppBarTheme(
+            backgroundColor: Colors.indigo.shade700,
+          )
+        );
       case ThemeType.Other:
-        return ThemeData();
+        return ThemeData(
+            scaffoldBackgroundColor: Colors.orange,
+            textTheme: TextTheme(
+                headline3: TextStyle(
+                    color: Colors.black87
+                ),
+                subtitle1: TextStyle(
+                    color: Colors.yellowAccent
+                ),
+                bodyText1: TextStyle(
+                    color: Colors.greenAccent
+                )
+            ),
+            appBarTheme: AppBarTheme(
+              backgroundColor: Colors.orange,
+            )
+        );
     }
   }
 }
