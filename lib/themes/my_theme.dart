@@ -43,7 +43,7 @@ class MyTheme with ChangeNotifier {
             )
           ),
             appBarTheme: AppBarTheme(
-              backgroundColor: Colors.lightBlueAccent.shade100,
+              backgroundColor: Colors.brown.shade800,
             )
         );
       case ThemeType.Dark:
@@ -72,10 +72,10 @@ class MyTheme with ChangeNotifier {
                     color: Colors.black87
                 ),
                 subtitle1: TextStyle(
-                    color: Colors.yellowAccent
+                    color: Colors.green[900]
                 ),
                 bodyText1: TextStyle(
-                    color: Colors.greenAccent
+                    color: Colors.deepOrange
                 )
             ),
             appBarTheme: AppBarTheme(

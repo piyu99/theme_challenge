@@ -52,6 +52,7 @@ class _SceneryState extends State<Scenery> {
                   children: <Widget>[
                     Expanded(
                       child: RadioListTile<ThemeType>(
+                        activeColor: Colors.indigo,
                         contentPadding: EdgeInsets.symmetric(horizontal: 4),
                         title: const Text('Light'),
                         groupValue: myTheme.themeType,
@@ -61,6 +62,7 @@ class _SceneryState extends State<Scenery> {
                     ),
                     Expanded(
                       child: RadioListTile<ThemeType>(
+                      activeColor: Colors.yellowAccent,
                         contentPadding: EdgeInsets.symmetric(horizontal: 4),
                         title: const Text('Dark'),
                         groupValue: myTheme.themeType,
@@ -70,6 +72,7 @@ class _SceneryState extends State<Scenery> {
                     ),
                     Expanded(
                       child: RadioListTile<ThemeType>(
+                        activeColor: Colors.green[900],
                         contentPadding: EdgeInsets.symmetric(horizontal: 4),
                         title: const Text('Other'),
                         groupValue: myTheme.themeType,
@@ -100,20 +103,20 @@ class SomeText extends StatelessWidget {
           style: Theme.of(context).textTheme.headline3,
         ),
         Text(
-          'Anonymous',
+          'Piyush',
           style: Theme.of(context).textTheme.subtitle1,
         ),
         const SizedBox(height: 8),
         Text(
-          'Hello, Flutter Friend!',
+          'Hello, Flutteristas',
           style: Theme.of(context).textTheme.bodyText1,
         ),
         Text(
-          'Welcome to Flutter Challenge',
+          'Thanks for the Flutter Challenge',
           style: Theme.of(context).textTheme.bodyText1,
         ),
         Text(
-          'We hope you have fun :)',
+          'I hope you like it',
           style: Theme.of(context).textTheme.bodyText1,
         ),
       ],
